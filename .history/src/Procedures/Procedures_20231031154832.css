@@ -1,0 +1,33 @@
+.formInfo{
+    width: 100%;
+    background-color: transparent;
+    border: 1.5px solid rgb(141, 135, 135);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: black;
+}
+.forms{
+    color: black;
+}
+.formBtn{
+    background-color: navy;
+}
+.submitStyle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 150px;
+}
+.backBtn{
+    align-self: flex-end;
+    background-color: transparent;
+    color: black;
+}
+.backBtn:hover{
+    border: none;
+    color: n;
+}
+.submitStyle .formBtn{
+    align-self: flex-end;
+}

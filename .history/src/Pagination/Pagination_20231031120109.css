@@ -1,0 +1,4 @@
+import Image1 from '../assets/images/bg-sidebar-desktop.svg'
+.pagination{
+    background-image: image();
+}

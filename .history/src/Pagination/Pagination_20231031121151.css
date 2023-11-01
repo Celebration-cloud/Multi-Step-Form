@@ -1,0 +1,13 @@
+.pagination{
+    background-image: url(../../assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 30px;
+}
+.pageNum{
+    width: 20px;
+}
