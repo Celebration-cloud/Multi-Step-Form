@@ -132,7 +132,7 @@
         margin-bottom: 100px;
     }
     .backBtn{
-    margin-top: 20px;
+    margin-top: 80px;
     position: relative;
     align-self: flex-start;
     background-color: transparent;
@@ -144,7 +144,7 @@
     position: absolute;
     justify-content: end;
     padding: 15px;
-    margin-top: 4px;
+    margin-top: 14px;
     margin-left: -10px;
     width: 100%;
 }
