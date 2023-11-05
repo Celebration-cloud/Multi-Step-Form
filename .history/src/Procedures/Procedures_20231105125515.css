@@ -1,0 +1,178 @@
+.formInfo{
+    width: 100%;
+    background-color: transparent;
+    border: 1.5px solid rgb(141, 135, 135);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: black;
+}
+.mobileTab{
+    margin-bottom: 50px;
+}
+.submitBtn{
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+.formBtn{
+    background-color: navy;
+}
+
+.backBtn{
+    position: absolute;
+    margin-top: -55px;
+    align-self: flex-start;
+    background-color: transparent;
+    color: black;
+}
+.backBtn:hover{
+    color: navy;
+}
+.selectingPlan{
+    width: 100%;
+    height: 100%;
+}
+.planGap{
+    border-radius: 20px;
+    margin: 5px;
+}
+.selectPlan{
+    text-align: left;
+    width: 130px;
+    height: 130px;
+}
+.selectPlan img{
+    margin-bottom: 30px;
+}
+.switch {
+ --button-width: 2.3em;
+ --button-height: 1.3em;
+ --toggle-diameter: 0.8em;
+ --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+ --toggle-shadow-offset: 10px;
+ --toggle-wider: 3em;
+ --color-grey: black;
+ --color-green: black;
+}
+
+.slider {
+    text-align: left;
+ display: inline-block;
+ width: var(--button-width);
+ height: var(--button-height);
+ background-color: var(--color-grey);
+ border-radius: calc(var(--button-height) / 2);
+ position: relative;
+ transition: 0.3s all ease-in-out;
+}
+
+.slider::after {
+ content: "";
+ display: inline-block;
+ width: var(--toggle-diameter);
+ height: var(--toggle-diameter);
+ background-color: #fff;
+ border-radius: calc(var(--toggle-diameter) / 2);
+ position: absolute;
+ top: var(--button-toggle-offset);
+ transform: translateX(var(--button-toggle-offset));
+ box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+ transition: 0.3s all ease-in-out;
+}
+
+.switch input[type="checkbox"]:checked + .slider {
+ background-color: var(--color-green);
+}
+
+.switch input[type="checkbox"]:checked + .slider::after {
+ transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+ box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+}
+
+.switch input[type="checkbox"] {
+ display: none;
+}
+
+.switch input[type="checkbox"]:active + .slider::after {
+ width: var(--toggle-wider);
+}
+
+.switch input[type="checkbox"]:checked:active + .slider::after {
+ transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+}
+.monYr{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    background-color: aliceblue;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(152, 166, 166);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+@media (max-width: 903px) {
+    .selectPlan{
+        width: 110px;
+    }
+}
+@media (max-width: 770px) {
+    .mobileTab{
+        margin: 10px;
+        margin-top: -70px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .backBtn{
+    margin-top: 20px;
+    position: relative;
+    align-self: flex-start;
+    background-color: transparent;
+    color: black;
+}
+.submitBtn{
+    background-color: #fff;
+    display: flex;
+    position: absolute;
+    justify-content: end;
+    padding: 15px;
+    margin-top: 80;
+    margin-left: -10px;
+    width: 100%;
+}
+    .proceed{
+        background-color: aliceblue;
+        padding: 10px;
+        width: 100vw;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .selectPlan{
+        width: 150px;
+    }
+    
+}
+@media (max-width: 480px) {
+    .selectPlan{
+        display: flex;
+        height: 50px;
+        gap: 10px;
+        width: 65vw;
+    }
+    .selectPlan img{
+    margin-bottom: 0px;
+}
+.monYr{
+    border-radius: 10px;
+    font-size: large;
+}
+}
